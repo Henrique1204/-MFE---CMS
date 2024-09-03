@@ -1,19 +1,3 @@
-const { merge } = require('webpack-merge');
-const singleSpaDefaults = require('webpack-config-single-spa-react-ts');
-
-module.exports = (webpackConfigEnv, argv) => {
-  const defaultConfig = singleSpaDefaults({
-    orgName: 'henrique1204',
-    projectName: 'cms',
-    webpackConfigEnv,
-    argv,
-  });
-
-  return merge(defaultConfig, {
-    // modify the webpack config however you'd like to by adding to this object
-  });
-};
-
 const { mergeWithRules } = require('webpack-merge');
 const Dotenv = require('dotenv-webpack');
 const singleSpaDefaults = require('webpack-config-single-spa-react-ts');
