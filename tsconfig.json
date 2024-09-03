@@ -1,0 +1,81 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "declarationDir": "dist",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@Mocks/*": [
+        "./@mocks/*"
+      ],
+      "@Types/*": [
+        "./@types/*"
+      ],
+      "@Components/*": [
+        "./components/*"
+      ],
+      "@Assets/*": [
+        "./core/assets/*"
+      ],
+      "@Constants/*": [
+        "./core/constants/*"
+      ],
+      "@Libs/*": [
+        "./core/libs/*"
+      ],
+      "@Utils/*": [
+        "./core/utils/*"
+      ],
+      "@Store/*": [
+        "./core/store/*"
+      ],
+      "@Hooks/*": [
+        "./hooks/*"
+      ],
+      "@Tests/*": [
+        "./tests/*"
+      ],
+      "@Pages/*": [
+        "./pages/*"
+      ]
+    },
+    "types": [
+      "@types/jest",
+      "@types/node"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "src/@types"
+    ]
+  },
+  "files": [
+    "./src/index.tsx"
+  ],
+  "include": [
+    "**/*.*",
+    "**/*.svg"
+  ],
+  "exclude": [
+    "./root/**/*.*"
+  ]
+}
