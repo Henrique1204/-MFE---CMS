@@ -12,10 +12,10 @@ Siga os passos abaixo para iniciar o projeto:
 
 #### 1. Instale as dependências:
 
-No terminal, execute o seguinte comando para instalar todas as dependências necessárias tanto para o projeto principal quanto para o root:
+No terminal, execute o seguinte comando para instalar todas as dependências necessárias tanto para o projeto principal quanto para o root e utility:
 
 ```shell
-yarn bootstrap
+yarn
 ```
 
 #### 2. Inicie o projeto.

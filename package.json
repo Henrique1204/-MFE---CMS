@@ -1,11 +1,13 @@
 {
   "name": "@henrique1204/cms",
   "scripts": {
-    "bootstrap": "yarn && cd root && yarn && cd ..",
+    "setup:submodules": "git submodule update --init --recursive && cd cms-utility && yarn && cd ..",
+    "setup:root": "cd root && yarn install && cd ..",
     "start": "webpack serve --port 3001",
-    "start:root": "cd root && yarn start --port 9000",
-    "start:standalone": "webpack serve --env standalone",
-    "start:all": "yarn start & yarn start:root",
+    "start:root": "cd root && yarn start",
+    "start:utility": "cd cms-utility && yarn start",
+    "start:standalone": "webpack serve --port 3001 --env standalone",
+    "start:all": "yarn start & yarn start:utility & yarn start:root",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
     "analyze": "webpack --mode=production --env analyze",
@@ -14,7 +16,7 @@
     "check-format": "prettier --check .",
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
-    "prepare": "husky install",
+    "prepare": "husky install && yarn setup:root && yarn setup:submodules",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build:types": "tsc"
   },

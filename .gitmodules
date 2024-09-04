@@ -1,0 +1,3 @@
+[submodule "cms-utility"]
+	path = cms-utility
+	url = git@github.com:Henrique1204/cms-utility.git

@@ -15,3 +15,5 @@ const lifecycles = singleSpaReact({
 });
 
 export const { bootstrap, mount, unmount } = lifecycles;
+
+export const utils = { pimba: true };
