@@ -1,9 +1,6 @@
 {
   "Create Component": {
-    "prefix": [
-      "client-component-init",
-      "mci"
-    ],
+    "prefix": ["client-component-init", "mci"],
     "body": [
       "import React from 'react';",
       "\nconst $1ComponentName: Component = () => {",
@@ -15,10 +12,7 @@
     "description": "Create component with arrow function and Component typing."
   },
   "Create Component with Styles": {
-    "prefix": [
-      "component-styles",
-      "mcs"
-    ],
+    "prefix": ["component-styles", "mcs"],
     "body": [
       "'use client';",
       "import React from 'react';",
@@ -33,10 +27,7 @@
     "description": "Create component with arrow function, Component typing and import of styles."
   },
   "Inicialize Styled Component": {
-    "prefix": [
-      "styled-init",
-      "msi"
-    ],
+    "prefix": ["styled-init", "msi"],
     "body": [
       "import styled from 'styled-components';",
       "\nexport const Container = styled.div`$1`;",
@@ -45,23 +36,13 @@
     "description": "Start component styles."
   },
   "Import styles": {
-    "prefix": [
-      "import-styles",
-      "mis"
-    ],
-    "body": [
-      "import * as Styles from './styles.ts';"
-    ],
+    "prefix": ["import-styles", "mis"],
+    "body": ["import * as Styles from './styles.ts';"],
     "description": "Import styles."
   },
   "Import Component Props Type": {
-    "prefix": [
-      "import-props-type",
-      "mipt"
-    ],
-    "body": [
-      "import * as Types from './types.ts';"
-    ],
+    "prefix": ["import-props-type", "mipt"],
+    "body": ["import * as Types from './types.ts';"],
     "description": "Import props type."
   }
 }

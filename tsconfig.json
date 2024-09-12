@@ -6,11 +6,7 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -25,57 +21,22 @@
     "downlevelIteration": true,
     "baseUrl": "./src",
     "paths": {
-      "@Mocks/*": [
-        "./@mocks/*"
-      ],
-      "@Types/*": [
-        "./@types/*"
-      ],
-      "@Components/*": [
-        "./components/*"
-      ],
-      "@Assets/*": [
-        "./core/assets/*"
-      ],
-      "@Constants/*": [
-        "./core/constants/*"
-      ],
-      "@Libs/*": [
-        "./core/libs/*"
-      ],
-      "@Utils/*": [
-        "./core/utils/*"
-      ],
-      "@Store/*": [
-        "./core/store/*"
-      ],
-      "@Hooks/*": [
-        "./hooks/*"
-      ],
-      "@Tests/*": [
-        "./tests/*"
-      ],
-      "@Pages/*": [
-        "./pages/*"
-      ]
+      "@Mocks/*": ["./@mocks/*"],
+      "@Types/*": ["./@types/*"],
+      "@Components/*": ["./components/*"],
+      "@Assets/*": ["./core/assets/*"],
+      "@Constants/*": ["./core/constants/*"],
+      "@Libs/*": ["./core/libs/*"],
+      "@Utils/*": ["./core/utils/*"],
+      "@Store/*": ["./core/store/*"],
+      "@Hooks/*": ["./hooks/*"],
+      "@Tests/*": ["./tests/*"],
+      "@Pages/*": ["./pages/*"]
     },
-    "types": [
-      "@types/jest",
-      "@types/node"
-    ],
-    "typeRoots": [
-      "./node_modules/@types",
-      "src/@types"
-    ]
+    "types": ["@types/jest", "@types/node"],
+    "typeRoots": ["./node_modules/@types", "src/@types"]
   },
-  "files": [
-    "./src/index.tsx"
-  ],
-  "include": [
-    "**/*.*",
-    "**/*.svg"
-  ],
-  "exclude": [
-    "./root/**/*.*"
-  ]
+  "files": ["./src/index.tsx"],
+  "include": ["**/*.*", "**/*.svg"],
+  "exclude": ["./root/**/*.*", "./cms-utility/**/*.*"]
 }

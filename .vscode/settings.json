@@ -16,7 +16,7 @@
   "explorer.compactFolders": false,
   "prettier.trailingComma": "es5",
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": true
   },
   "typescript.updateImportsOnFileMove.enabled": "always",

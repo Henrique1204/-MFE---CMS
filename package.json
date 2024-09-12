@@ -1,8 +1,10 @@
 {
   "name": "@henrique1204/cms",
   "scripts": {
-    "setup:submodules": "git submodule update --init --recursive && cd cms-utility && yarn && cd ..",
+    "setup:submodules": "git submodule update --init --recursive",
+    "setup:utility": "cd cms-utility && yarn && cd ..",
     "setup:root": "cd root && yarn install && cd ..",
+    "setup": "yarn && yarn setup:submodules && yarn setup:root && yarn setup:utility",
     "start": "webpack serve --port 3001",
     "start:root": "cd root && yarn start",
     "start:utility": "cd cms-utility && yarn start",
@@ -16,7 +18,7 @@
     "check-format": "prettier --check .",
     "test": "cross-env BABEL_ENV=test jest",
     "watch-tests": "cross-env BABEL_ENV=test jest --watch",
-    "prepare": "husky install && yarn setup:root && yarn setup:submodules",
+    "prepare": "husky install",
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "build:types": "tsc"
   },
@@ -63,7 +65,8 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "single-spa": "^5.9.3",
-    "single-spa-react": "^4.3.1"
+    "single-spa-react": "^4.3.1",
+    "zustand": "^4.5.5"
   },
   "types": "dist/henrique1204-cms.d.ts"
 }

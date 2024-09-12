@@ -15,7 +15,7 @@ Siga os passos abaixo para iniciar o projeto:
 No terminal, execute o seguinte comando para instalar todas as dependências necessárias tanto para o projeto principal quanto para o root e utility:
 
 ```shell
-yarn
+yarn setup
 ```
 
 #### 2. Inicie o projeto.
@@ -26,12 +26,8 @@ Após a instalação das dependências, execute o comando abaixo para iniciar o 
 yarn start:all
 ```
 
-
 #### 3. Visualize a aplicação
 
 Para visualizar a aplicação, acesse a URL:
 
 [http://localhost:9000](http://localhost:9000)
-
-
-
